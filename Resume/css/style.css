@@ -1,0 +1,646 @@
+@font-face {
+    font-family: Pacifico;
+    src: url(/fonts/Pacifico-Regular.ttf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: Anton;
+    src: url(/fonts/Anton-Regular.ttf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: Tiro;
+    src: url(/fonts/TiroDevanagariMarathi-Regular.ttf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: Raleway;
+    src: url(/fonts/Raleway-Regular.ttf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: Raleway;
+    src: url(/fonts/Raleway-Bold.ttf);
+    font-weight: 600;
+}
+@font-face {
+    font-family: Poppins;
+    src: url(/fonts/Poppins-Regular.ttf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: Poppins;
+    src: url(/fonts/Poppins-Bold.ttf);
+    font-weight: 600;
+}
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a
+{
+    text-decoration: none;
+    color: #2d2929;
+}
+.header 
+{
+    display: flex;
+    background-color: #dde0e3;
+    z-index: 100;
+    position: relative;
+}
+.container
+{
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 50px;
+}
+.header__logo
+{
+    font-size: 20px;
+    font-family: 'Pacifico';
+    font-weight: 400;
+}
+
+
+
+img
+{
+    width: 100%;
+}
+.main
+{
+    display: flex;
+    background-color: #dde0e3;
+}
+.main__con
+{
+    display: flex;
+    align-items: center;
+    align-content:center;
+    justify-content: space-between;
+    padding: 20px 40px;
+}
+.side-bar
+{
+    position: relative;
+    top: -50px;
+    display: flex;
+    width: 440px;
+    flex-direction: column;
+    align-items: center;
+}
+.side-img 
+{
+    position: relative;
+    top: 100px;
+    width: 180px;
+    height: 180px;
+}
+.side-img img
+{
+    border-radius: 15px;
+}
+.side-info
+{
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    padding: 10px 10px;
+    padding-top: 100px;
+    border-radius: 10px;
+}
+.side-info--heading
+{
+    padding: 10px;
+    font-size: 26px;
+
+}
+.side-info--heading h3
+{
+    font-family: 'Raleway';
+    font-weight: 600;
+}
+.side-info--p
+{
+    font-size: 16px;
+    opacity: 0.6;
+}
+.side-info--p p
+{
+    font-family: 'Raleway';
+    font-weight: 400;
+}
+.contacts--img
+{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    margin: 20px 10px;
+    align-items: center;
+    align-content: center;
+
+}
+.contacts--img img
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #F2F5F9;
+    padding: 10px 10px;
+}
+.side-contacts
+{
+    background-color: #F2F5F9;
+    padding: 16px 10px;
+    border-radius: 10px;
+}
+.side-contacts--DATA
+{
+    padding-top: 15px;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    border-bottom: solid 2px #E3E3E3;
+}
+.phone-numbers h5
+{
+    font-size: 14px;
+    color: #aaa6a6;
+}
+.phone-numbers p
+{
+    font-size: 16px;
+}
+.side-contacts--Download
+{
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    margin: 16px;
+    padding: 10px 6px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    background: linear-gradient(to right, #FF9C1A, #E80505);
+}
+.Download-img
+{
+    width: 20px;
+    height: 20px;
+}
+.Download-txt
+{
+    font-size: 20px;
+    color: #F2F7FC;
+}
+.content
+{
+    width: calc(100% - 440px);
+    display: flex;
+    flex-direction: column;
+}
+.content__navbar
+{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    
+}
+.navbar--elements1
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    background-color: #E1E8EF;
+    border-radius: 10px;
+    padding: 10px 20px;
+    width: 80px;
+    height: 80px;
+}
+.navbar--elements2
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    background: linear-gradient(to right, #FF9C1A, #E80505);
+    border-radius: 10px;
+    padding: 10px 20px;
+    width: 80px;
+    height: 80px;
+}
+.navbar--elements3
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    background-color: #E1E8EF;
+    border-radius: 10px;
+    padding: 10px 20px;
+    width: 80px;
+    height: 80px;
+}
+.navbar--elements4
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    background-color: #E1E8EF;
+    border-radius: 10px;
+    padding: 10px 20px;
+    width: 80px;
+    height: 80px;
+}
+.navbar--elements img
+{
+    width: 30px;
+    height: 30px;
+}
+.navbar
+{
+    background-color: #F2F7FC;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 15px 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(191, 189, 189, 0.5);
+}
+.content__intro
+{
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-top: 20px;
+    padding: 20px 20px;
+}
+.content__about
+{
+    display: flex;
+    flex-direction: column;
+}
+.about--heading
+{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.About
+{
+    font-size: 40px;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-style: bold;
+}
+.about--line
+{
+    width: 200px;
+    height: 3px;
+}
+
+
+
+.content__deals
+{
+    display: flex;
+    flex-direction: column;
+}
+.content__headings
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.education--headings img
+{
+    width: 35px;
+    height: 30px;
+}
+.education--headings h3
+{
+    font-size: 35px;
+    font-family: 'Poppins';
+    font-weight: 500;
+}
+.education--headings
+{
+    display: flex;
+    list-style: none;
+    gap: 3px;
+    align-items: center;
+}
+.content__places
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-evenly;
+
+}
+.content__study
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #FFE3BF;
+    border-radius: 7px;
+    padding: 14px 16px;
+    width: 300px;
+}
+.study--heading
+{
+    color: #7d7a76;
+    font-size: 14px;
+    font-family: 'Raleway';
+    font-weight: 400;
+}
+.study--maintxt
+{
+    font-size: 18px;
+    color: #000000;
+    font-family: 'Raleway';
+    font-weight: 520;
+}
+.study--txt
+{
+    font-size: 14px;
+    color: #000000;
+    font-family: 'Poppins';
+    font-weight: 500;
+}
+
+.content__skills
+{
+    display: flex;
+    flex-direction: column;
+    background-color: #F8FBFB;
+}
+.type--skills
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.work--skills
+{
+    font-size: 24px;
+    font-family: 'Poppins';
+    font-weight: 600;
+}
+
+.soft--skills
+{
+    font-size: 24px;
+    font-family: 'Raleway';
+    font-weight: 600;
+}
+.name--skills
+{
+    display: flex;
+    justify-content: space-around;
+}
+.IT--skills
+{
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: space-around;
+    padding: 20px 10px;
+}
+.skills
+{
+    font-size: 16px;
+    font-family: 'Raleway';
+    padding: 10px 6px;
+    background-color: #E1E8EF;
+    border-radius: 10px;
+}
+
+.red-text
+{
+background: linear-gradient(to right, red, blue);
+  background-clip: text;
+  -webkit-background-clip: text; /* Для поддержки в браузерах на основе WebKit */
+  color: transparent;
+}
+.elements--homee
+{
+    color: #F2F5F9;
+}
+
+.contacts--social-media:hover
+{
+    opacity: 0.7;
+}
+
+
+.side-contacts--Download:hover
+{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.navbar--elements1 img
+{
+    width: 25px;
+    height: 25px;
+}
+
+.navbar--elements1:hover
+{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.navbar--elements2:hover
+{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);    
+}
+.navbar--elements3:hover
+{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);    
+}
+.navbar--elements4:hover
+{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);    
+}
+
+
+
+
+@media (max-width: 992px)
+{
+    .main__con
+    {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .content
+    {
+        width: 100%;
+        padding: 30px;
+    }
+    .side-bar
+    {
+        display: flex;
+    }
+    .side-info
+    {
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+    }
+    .side-contacts
+    {
+        width: 100%;
+        padding: 0 10px;
+    }
+    .main__con
+    {
+        display: flex;
+        padding: 0 20px;
+    }
+    .side-info--name
+    {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        left: 20px;
+    }
+    .side-img
+    {
+        position: relative;
+        left: -165px;
+        top: 230px;
+    }
+    .contacts--img
+    {
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (max-width: 768px)
+{
+    .deals--skills
+    {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding-top: 0;
+        justify-content: space-around;
+    }
+    .side-img
+    {
+        position: relative;
+        left: -168px;
+        top: 220px;
+    }
+    .side-info--name
+    {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        gap: 10px;
+        left: 20px;
+    }
+}
+@media (max-width: 430px)
+{
+    .main__con
+    {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .content
+    {
+        width: 100%;
+        padding: 30px;
+    }
+    .side-bar
+    {
+        display: flex;
+    }
+    .side-info
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    .side-contacts
+    {
+        width: 100%;
+        padding: 0 10px;
+    }
+    .main__con
+    {
+        padding: 0 20px;
+    }
+    .side-info--name
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .contacts--img
+    {
+        display: flex;
+        flex-direction: row;
+    }
+    .side-info--heading
+    {
+        padding: 0;
+    }
+    .side-info
+    {
+        gap: 20px;
+    }
+    .side-img
+    {
+        position: relative;
+        left: 20px;
+        top: 100px;
+    }
+    .about--heading
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        padding-bottom: 15px;
+    }
+    .navbar
+    {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .content__deals
+    {
+        align-items: center;
+    }
+    .content__intro
+    {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+}

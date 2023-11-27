@@ -393,6 +393,7 @@ img {
     .main__con {
         display: flex;
         flex-direction: column-reverse;
+        align-items: center;
     }
     .content {
         width: 100%;
@@ -400,6 +401,8 @@ img {
     }
     .side-bar {
         display: flex;
+        max-width: 340px;
+        padding-bottom: 20px;
     }
     .side-info {
         display: flex;
@@ -451,6 +454,9 @@ img {
     }
 }
 @media (max-width: 430px) {
+    *{
+        box-sizing: border-box;
+    }
     .main__con {
         display: flex;
         flex-direction: column-reverse;
@@ -510,5 +516,17 @@ img {
     }
     .content__deals {
         align-items: center;
+    }
+    .design{
+        width: 260px;
+    }
+    .game-dev {
+        width: 260px;
+    }
+    .photo-skills{
+        width: 260px;
+    }
+    .web-dev{
+        width: 260px;
     }
 }
